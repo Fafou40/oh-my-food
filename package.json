@@ -1,0 +1,11 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": "(project ohmyfood)",
+  "main": "index.js",
+  "scripts": {
+     "sass": "sass --watch ./ohmyfood/sass/main.scss:./ohmyfood/css/index.css"
+  },
+  "author": "sousleys fabien",
+  "license": "ISC"
+}
