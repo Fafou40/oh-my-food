@@ -1,0 +1,15 @@
+.nav__container {
+    @include display;
+    flex-direction: column;
+    background-color: #F7F7F7;
+    &--title {
+        @include h1_h2;
+        flex-wrap: wrap;
+        margin: 39px 58px 25px 58px;
+        text-align: center
+    }
+    &--texte {
+        @include text;
+        text-align: center
+    }
+}

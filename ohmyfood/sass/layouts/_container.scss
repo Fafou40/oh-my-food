@@ -1,0 +1,13 @@
+
+
+
+
+.fonctionnement {
+    &__container {
+    margin: 48px 20px 68px 30px;
+    }
+    &__title {
+    @include h1_h2;
+    margin-bottom: 26px;
+    }
+}

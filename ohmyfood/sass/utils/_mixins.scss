@@ -1,0 +1,47 @@
+/*polices size*/
+@mixin header_button {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+}
+@mixin h1_h2 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+}
+@mixin text {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 21px;
+}
+@mixin card_name {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+}
+@mixin card_text {
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 20px;
+}
+@mixin footer_icon {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+}
+@mixin footer_no_icon {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+}
+@mixin h1_desktop {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 47px;
+}
+
+@mixin display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

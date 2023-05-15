@@ -12,3 +12,16 @@
 @import "./pages/work";
 @import "./pages/about";
 @import "./pages/project";
+
+* {
+    margin: 0;
+    max-width: 375px;
+    font-family: 'roboto';
+    font-style: normal;
+}
+
+body {
+display: flex;
+justify-content: center;
+flex-direction: column;
+}
