@@ -1,13 +1,36 @@
-
-
-
-
-.fonctionnement {
+.restaurants {
     &__container {
-    margin: 48px 20px 68px 30px;
+    background-color: #F7F7F7;
+    padding-bottom: 66px;
     }
-    &__title {
+    &__title{
     @include h1_h2;
-    margin-bottom: 26px;
+    padding-left:  20px;
+    padding-top: 54px;
+    
     }
+    &__content{
+        display: flex;
+        flex-direction: row;
+        &--text-card{
+            display: flex;
+            flex-direction: column;
+        }
+        &--heart{
+            font-size: 21px;
+            position: absolute;
+            display: inline-block;
+                bottom: 25px;
+                right: 25px;
+        }
+    }
+}
+
+.fonctionnement{
+&__container{
+    margin: 48px 20px 68px 20px;
+}
+&__title{
+    margin-bottom: 26px;
+}
 }
