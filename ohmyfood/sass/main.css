@@ -7,6 +7,7 @@
 }
 
 .button_pink {
+  z-index: 1;
   /* Button Gradient */
   background: linear-gradient(to top, #9356DC -11.44%, #FF79DA 123.93%);
   /* Shadow/Button */
@@ -28,10 +29,6 @@
 .button_pink:hover {
   opacity: 0.8;
   box-shadow: 2px 4px 15px #3f3f3f;
-}
-
-body {
-  overflow: hidden; /* Empêche le défilement de la page pendant l'animation */
 }
 
 .loader-container {
