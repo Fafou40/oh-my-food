@@ -79,51 +79,40 @@
     box-sizing: border-box;
 }
 
-.heart-container {
-    position: relative;
-    width: 24px;
-    height: 24px;
-    bottom: -30px;
-    right: 10px;
+.heart__icon{
+  position: relative;
+  display: flex;
+  margin-right: 16px;
+  &--empty{
+      position: absolute;
+      color: black;
+      font-weight: 900;
+      opacity: 1;
   }
-  
-  .second-heart {
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
+  &--full{
+      position: absolute;
+      opacity: 0;
+      background: linear-gradient(#FF79DA, #9356DC);
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      transition-property: all;
+      transition-duration: 300ms;
   }
-  
-  .first-heart:hover + .second-heart {
-    display: block;
+  &:hover &--full{
+      opacity: 1;
   }
-  
-  .first-heart {
-    position: relative;
+  &:hover &--empty{
+      opacity: 0;
   }
-  
-  .first-heart::before {
-    content: "\f004";
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    color: #000; /* Couleur par défaut */
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 2;
-  }
-  
-  .second-heart::before {
-    content: "\f004";
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    color: #FF79DA;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 3;
-  }
-  
-  
-  
+}
+
+.heart_index{
+  @include display;
+}
+
+.heart_menu{
+  position: absolute;
+  top: 40px;
+  right: 40px;
+}

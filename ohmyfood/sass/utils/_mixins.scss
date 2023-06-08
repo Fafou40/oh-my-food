@@ -21,7 +21,7 @@
 }
 @mixin card_text {
     font-weight: 300;
-    font-size: 17px;
+    font-size: 15px;
     line-height: 20px;
 }
 @mixin footer_icon {
@@ -44,4 +44,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+@mixin h1menu{
+    font-family: 'Shrikhand';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 41px;
 }

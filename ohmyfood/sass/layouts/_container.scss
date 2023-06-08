@@ -34,3 +34,77 @@
     margin-bottom: 26px;
 }
 }
+.container_main{
+    background-color: #f7f7f7;
+    
+}
+.container_menu{
+    background-color: #f7f7f7;
+   
+}
+.title_display{
+    padding: 32px 17px 42px 17px;
+    position: relative;
+    top: -63px;
+    margin-bottom: -63px;
+    border-radius: 30px 30px 0px 0px;
+    background-color: #f7f7f7;
+    @include h1menu;
+}
+.title_menu{
+    @include h1menu;
+    margin: 0;
+}
+.heart_menu{
+    font-size: medium;
+    position: relative;
+    
+}
+
+.title2{
+    display: inline-block;
+    flex-direction: column;
+    text-transform: uppercase;
+    @include card_text;
+    padding-left: 12px;
+    &__under{
+    height: 3px;
+    width: 75%;
+    background-color: #99e2d0;
+    }
+}
+
+.menu_card{
+    background: #FFFFFF;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 69px;
+    margin: 12px;
+    position: relative;
+    &__container{
+        margin-bottom: 40px;
+    }
+    &__plat{
+        @include card_name;
+        padding-bottom: 5px;
+        padding-left: 15px;
+        @extend %hidden-text;
+        width: 100%;
+    }
+    &__condi{
+        @include card_text;
+        @extend %hidden-text;
+        padding-left: 15px;
+        width: max-content;
+    }
+    &__prix{
+        @include card_name;
+        position: absolute;
+        right: 12px;
+        bottom: 12px;
+    }
+
+}
