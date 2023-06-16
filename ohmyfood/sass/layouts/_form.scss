@@ -90,10 +90,9 @@
 
 .heart__icon{
     position: relative;
-    @include display;
+    @include flexbox-center;
     &--outline {
         position: absolute;
-        
     }
     &--solid {
         position: absolute;
@@ -102,25 +101,22 @@
         color: transparent;
         transform: scale(0);
         transition: transform 300ms;
-       
     }
     
     &:hover {
         cursor: pointer;
         .heart__icon--solid {
             transform: scale(1);
-     
         }
         .heart__icon--outline {
             background: linear-gradient(180deg, $color-heart1 0%, $color-heart2 100%);
             background-clip: text;
             color: transparent;
-            
         }
     }
 }
 
 .heart_index{
-  
+  @include display;
 }
 
