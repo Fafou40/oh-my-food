@@ -143,6 +143,7 @@
 
 .img_menu {
   width: 100%;
+  height: 275px;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -167,6 +168,13 @@
   font-size: 18px;
   line-height: 21px;
   text-align: center;
+}
+
+@media screen and (min-width: 480px) {
+  .main-index {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
 }
 
 .restaurants__container {
@@ -196,11 +204,25 @@
   right: 25px;
 }
 
+@media screen and (min-width: 550px) {
+  .restaurants-display {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
 .fonctionnement__container {
   margin: 48px 20px 68px 20px;
 }
 .fonctionnement__title {
   margin-bottom: 26px;
+}
+@media screen and (min-width: 480px) {
+  .fonctionnement__title {
+    margin-left: 180px;
+    margin-right: 180px;
+  }
 }
 
 .container_main {
@@ -293,6 +315,16 @@
   bottom: 12px;
 }
 
+@media screen and (min-width: 550px) {
+  .explains__display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+}
+
 .explains__container {
   width: 322px;
   height: 72px;
@@ -344,6 +376,7 @@
   text-decoration: none;
   margin-bottom: 30px;
   margin: 18px;
+  max-width: 490px;
 }
 .card__title {
   font-weight: 700;
@@ -387,12 +420,16 @@
 }
 .heart__icon--empty {
   position: absolute;
+  bottom: 33px;
+  right: 33px;
   color: black;
   font-weight: 900;
   opacity: 1;
 }
 .heart__icon--full {
   position: absolute;
+  bottom: 33px;
+  right: 33px;
   opacity: 0;
   background: linear-gradient(#FF79DA, #9356DC);
   background-clip: text;
@@ -446,13 +483,15 @@
   text-decoration: none;
   color: white;
 }
+.footer__links a:hover {
+  text-decoration: underline;
+}
 .footer__links--icon {
   margin-right: 8px;
 }
 
 * {
   margin: 0;
-  max-width: 375px;
   font-family: "roboto";
   font-style: normal;
 }

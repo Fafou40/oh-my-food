@@ -6,4 +6,14 @@ $blue:#89C8FA;
 $dark_blue:#003A68;
 $purple:#9356DC;
 $rose-gradient: linear-gradient(to top, $pink, $purple);
-$dark_grey:#353535
+$dark_grey:#353535;
+$color-heart1: #9356DC;
+$color-heart2: #FF79DA;
+
+/*breakpoints*/
+$breakpoints: (
+  mobile: 480px,
+  tablet: 768px,
+  laptop: 1024px,
+  desktop: 1280px,
+);

@@ -25,9 +25,13 @@
     &__links{
         text-decoration: none;
         color: white;
+        & a:hover {
+            text-decoration: underline;
+        }  
         &--icon{
             margin-right: 8px;
       
         }
     }
+    
 }
