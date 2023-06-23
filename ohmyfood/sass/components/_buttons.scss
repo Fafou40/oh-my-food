@@ -12,10 +12,13 @@ height: 50px;
 width: 218px;
 @include display;
 @include header_button;
-margin: 27px 80px 35px 80px;
+margin: 27px 80px 0px 80px;
 transition: 300ms ease-in-out;
 &:hover{
     opacity: 0.8;
     box-shadow: 2px 4px 15px darken(rgb(190, 190, 190), 50%);
+}
+&__display{
+    @include display;
 }
 }

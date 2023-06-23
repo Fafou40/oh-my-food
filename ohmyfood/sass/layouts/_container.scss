@@ -1,58 +1,75 @@
-.main-index{
-    @media screen and (min-width:480px) {
+.restaurants {
+    &__container {
+        background-color: #F7F7F7;
+        padding-bottom: 66px;
+
+    }
+
+    &__title {
+        @include h1_h2;
+        padding-left: 20px;
+        padding-top: 54px;
+
+        @media screen and (min-width:550px) {
+            margin-left: 100px;
+        }
+
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: row;
+
+        &--text-card {
+            display: flex;
+            flex-direction: column;
+
+        }
+    }
+}
+
+.restaurants-display {
+    @media screen and (min-width:550px) {
+        @include display;
+        flex-wrap: wrap;
+        margin-left: 300px;
+        margin-right: 300px;
+    }
+}
+
+.fonctionnement {
+    &__container {
+        margin: 48px 20px 68px 20px;
+    }
+
+    &__title {
+        margin-bottom: 26px;
+
+        @media screen and (min-width:550px) {
+            margin-left: 100px;
+            margin-right: 100px;
+        }
+    }
+}
+
+.container_main {
+    background-color: white;
+
+
+
+}
+
+.container_menu {
+    background-color: #f7f7f7;
+    padding-bottom: 40px;
+
+    @media screen and (min-width:700px) {
         margin-left: 100px;
         margin-right: 100px;
     }
 }
-.restaurants {
-    &__container {
-    background-color: #F7F7F7;
-    padding-bottom: 66px;
-    
-    }
-    &__title{
-    @include h1_h2;
-    padding-left:  20px;
-    padding-top: 54px;
-    
-    }
-    &__content{
-        display: flex;
-        flex-direction: row;
-        &--text-card{
-            display: flex;
-            flex-direction: column;
-           
-        }
-    }
-}
-.restaurants-display {
-    @media screen and (min-width:550px) {
-        display: flex;
-        flex-direction: row;;
-        flex-wrap: wrap;
-    }
-}
-.fonctionnement{
-&__container{
-    margin: 48px 20px 68px 20px;
-}
-&__title{
-    margin-bottom: 26px;
-    @media screen and (min-width:480px) {
-        margin-left: 180px;
-        margin-right: 180px;}
-}
-}
-.container_main{
-    background-color: #f7f7f7;
-    
-}
-.container_menu{
-    background-color: #f7f7f7;
-   
-}
-.title_display{
+
+.title_display {
     padding: 32px 17px 42px 17px;
     position: relative;
     top: -63px;
@@ -60,31 +77,34 @@
     border-radius: 30px 30px 0px 0px;
     background-color: #f7f7f7;
     @include h1menu;
+    display: flex;
+    flex-wrap: nowrap;
+
+    @media screen and (min-width:500px) {
+        @include display;
+    }
 }
-.title_menu{
+
+.title_menu {
     @include h1menu;
     margin: 0;
 }
-.heart_menu{
-    font-size: medium;
-    position: relative;
 
-}
-
-.title2{
+.title2 {
     display: inline-block;
     flex-direction: column;
     text-transform: uppercase;
     @include card_text;
     padding-left: 12px;
-    &__under{
-    height: 3px;
-    width: 75%;
-    background-color: #99e2d0;
+
+    &__under {
+        height: 3px;
+        width: 75%;
+        background-color: #99e2d0;
     }
 }
 
-.menu_card{
+.menu_card {
     background: #FFFFFF;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
     border-radius: 15px;
@@ -94,27 +114,36 @@
     height: 69px;
     margin: 12px;
     position: relative;
-    &__container{
+
+    &__container {
         margin-bottom: 40px;
+
+        @media screen and (min-width:600px) {
+            margin-left: 100px;
+            margin-right: 100px;
+        }
     }
-    &__plat{
+
+    &__plat {
         @include card_name;
         padding-bottom: 5px;
         padding-left: 15px;
         @extend %hidden-text;
         width: 100%;
     }
-    &__condi{
+
+    &__condi {
         @include card_text;
         @extend %hidden-text;
         padding-left: 15px;
         width: max-content;
     }
-    &__prix{
-        @include card_name;
+
+    &__prix {
+        @include h1_h2;
         position: absolute;
         right: 12px;
         bottom: 12px;
+        font-weight: bold;
     }
-
 }
