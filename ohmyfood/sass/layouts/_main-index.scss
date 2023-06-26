@@ -1,0 +1,161 @@
+.restaurants {
+    &__container {
+        background-color: #F7F7F7;
+        padding-bottom: 66px;
+
+    }
+
+    &__title {
+        @include h1_h2;
+        padding-left: 20px;
+        padding-top: 54px;
+
+        @media screen and (min-width:550px) {
+            margin-left: 100px;
+        }
+
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: row;
+
+        &--text-card {
+            display: flex;
+            flex-direction: column;
+
+        }
+    }
+}
+
+.restaurants-display {
+    @media screen and (min-width:550px) {
+        @include display;
+        flex-wrap: wrap;
+        margin-left: 300px;
+        margin-right: 300px;
+    }
+}
+
+.fonctionnement {
+    &__container {
+        margin: 48px 20px 68px 20px;
+    }
+
+    &__title {
+        margin-bottom: 26px;
+
+        @media screen and (min-width:550px) {
+            margin-left: 100px;
+            margin-right: 100px;
+        }
+    }
+}
+
+.container_main {
+    background-color: white;
+}
+
+.explains__display {
+    @media screen and (min-width:550px) {
+        @include display;
+        flex-wrap: wrap;
+        gap: 45px;
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+
+}
+
+.explains {
+    &__container {
+        width: 322px;
+        height: 72px;
+        border-radius: 20px;
+        /* Background */
+        background: #F7F7F7;
+        /* Shadow */
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        margin-bottom: 25px;
+        margin-left: 10px;
+
+    }
+
+    &__number {
+        background-color: $purple;
+        @include display;
+        border-radius: 50%;
+        transform: translateX(-10px);
+        padding: 5px;
+        color: white;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        width: 1.5em;
+        height: 1.5em;
+    }
+
+    &__logo {
+        padding-left: 22px;
+        color: #7E7E7E;
+        height: 22px;
+        width: 18px;
+    }
+
+    &__text {
+        padding-left: 27px;
+        @include header_button;
+    }
+}
+
+.card {
+    position: relative;
+    display: block;
+    background: #ffff;
+    border-radius: 20px;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    margin-bottom: 30px;
+    margin: 18px;
+    width: 340px;
+
+    &__title {
+        @include card_name;
+        margin: 18px 18px 5px 18px;
+        color: black;
+        width: 267px;
+    }
+
+    &__text {
+        @include card_text;
+        color: black;
+        margin: 0 80px 12px 17px;
+    }
+
+    &__new {
+        background: $green;
+        color: $dark_green;
+        padding: 0.5rem;
+        border-radius: 0.125rem;
+        position: absolute;
+        top: 1rem;
+        right: 0.75rem;
+    }
+
+}
+
+.card img {
+    width: 100%;
+    height: 164px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    object-fit: cover;
+    box-sizing: border-box;
+}
+
+.heart_index {
+    @include display;
+}

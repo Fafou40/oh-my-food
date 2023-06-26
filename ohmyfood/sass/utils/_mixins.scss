@@ -4,36 +4,43 @@
     font-size: 16px;
     line-height: 19px;
 }
+
 @mixin h1_h2 {
     font-weight: 700;
     font-size: 24px;
     line-height: 28px;
 }
+
 @mixin text {
     font-weight: 300;
     font-size: 18px;
     line-height: 21px;
 }
+
 @mixin card_name {
     font-weight: 700;
     font-size: 18px;
     line-height: 21px;
 }
+
 @mixin card_text {
     font-weight: 300;
     font-size: 15px;
     line-height: 20px;
 }
+
 @mixin footer_icon {
     font-weight: 500;
     font-size: 16px;
     line-height: 19px;
 }
+
 @mixin footer_no_icon {
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
 }
+
 @mixin h1_desktop {
     font-weight: 700;
     font-size: 40px;
@@ -45,24 +52,27 @@
     justify-content: center;
     align-items: center;
 }
-@mixin h1menu{
+
+@mixin h1menu {
     font-family: 'Shrikhand';
     font-style: italic;
     font-weight: 400;
     font-size: 28px;
     line-height: 41px;
 }
+
 @mixin mobile-only {
-    @media screen and (max-width: map-get($breakpoints, mobile)){
+    @media screen and (max-width: map-get($breakpoints, mobile)) {
         @content;
     }
 }
 
 @mixin tablet-only {
-    @media screen and (min-width: map-get($breakpoints, tablet)){
+    @media screen and (min-width: map-get($breakpoints, tablet)) {
         @content;
     }
 }
+
 @mixin list-delay {
     @for $i from 1 through 10 {
         &:nth-child(#{$i}) {

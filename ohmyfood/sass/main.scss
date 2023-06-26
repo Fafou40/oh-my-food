@@ -4,11 +4,12 @@
 @import "./utils/extensions";
 @import "./base/base";
 @import "./components/buttons";
+@import "./components/heart";
 @import "./layouts/loader";
 @import "./layouts/header";
 @import "./layouts/nav";
-@import "./layouts/container";
-@import "./layouts/form";
+@import "./layouts/main-index";
+@import "./layouts/main-menu";
 @import "./layouts/footer.scss";
 @import "./pages/work";
 @import "./pages/about";
@@ -16,13 +17,12 @@
 
 * {
     margin: 0;
-    
     font-family: 'roboto';
     font-style: normal;
 }
 
 body {
-display: flex;
-justify-content: center;
-flex-direction: column;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }

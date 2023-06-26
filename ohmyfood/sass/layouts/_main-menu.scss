@@ -1,64 +1,3 @@
-.restaurants {
-    &__container {
-        background-color: #F7F7F7;
-        padding-bottom: 66px;
-
-    }
-
-    &__title {
-        @include h1_h2;
-        padding-left: 20px;
-        padding-top: 54px;
-
-        @media screen and (min-width:550px) {
-            margin-left: 100px;
-        }
-
-    }
-
-    &__content {
-        display: flex;
-        flex-direction: row;
-
-        &--text-card {
-            display: flex;
-            flex-direction: column;
-
-        }
-    }
-}
-
-.restaurants-display {
-    @media screen and (min-width:550px) {
-        @include display;
-        flex-wrap: wrap;
-        margin-left: 300px;
-        margin-right: 300px;
-    }
-}
-
-.fonctionnement {
-    &__container {
-        margin: 48px 20px 68px 20px;
-    }
-
-    &__title {
-        margin-bottom: 26px;
-
-        @media screen and (min-width:550px) {
-            margin-left: 100px;
-            margin-right: 100px;
-        }
-    }
-}
-
-.container_main {
-    background-color: white;
-
-
-
-}
-
 .container_menu {
     background-color: #f7f7f7;
     padding-bottom: 40px;
@@ -145,5 +84,89 @@
         right: 12px;
         bottom: 12px;
         font-weight: bold;
+    }
+}
+
+.heart_menu {
+    font-size: medium;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    right: -77px;
+
+}
+
+.list {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+    background-color: white;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    padding: 12px 22px 12px 10px;
+    margin: 12px;
+    animation: menu-list 2s ease both;
+    @include list-delay;
+    overflow: hidden;
+
+    &__content,
+    &__title {
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+
+    &__title {
+        margin: 0 0 4px 0;
+        font-size: 18px;
+    }
+
+    &__subtitle {
+        font-weight: 300;
+        font-size: 14px;
+        letter-spacing: 0.03em;
+    }
+
+    &__price {
+        font-weight: 700;
+        font-size: 14px;
+        color: $dark_grey;
+        transition: .5s ease-in-out;
+        margin-left: 15px;
+    }
+
+    &__order {
+        position: absolute;
+        background-color: #99E2D0;
+        color: #fff;
+        font-size: 20px;
+        padding: 22.5px 20px;
+        border-radius: 0 15px 15px 0;
+        right: 0;
+        top: 0;
+        transform: translateX(60px);
+        transition: .5s ease-in-out;
+    }
+
+    &__icon {
+        transform: rotate(0deg);
+        transition: .5s ease-in-out;
+    }
+
+    &:hover {
+        cursor: pointer;
+
+        .list__price {
+            margin-right: 60px;
+        }
+
+        .list__order {
+            transform: translateX(0);
+        }
+
+        .list__icon {
+            transform: rotate(360deg);
+        }
     }
 }

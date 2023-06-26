@@ -1,0 +1,44 @@
+.heart__icon {
+    position: relative;
+
+    &--outline {
+        position: absolute;
+        right: -15px;
+        padding-left: 4px;
+        padding-right: 4px;
+
+        @media screen and (min-width:500px) {
+            left: -50px;
+        }
+    }
+
+    &--solid {
+        position: absolute;
+        right: -15px;
+        background: linear-gradient(180deg, $color-heart1 0%, $color-heart2 100%);
+        background-clip: text;
+        color: transparent;
+        transform: scale(0);
+        transition: transform 300ms;
+        padding-left: 4px;
+        padding-right: 4px;
+
+        @media screen and (min-width:500px) {
+            left: -50px;
+        }
+    }
+
+    &:hover {
+        cursor: pointer;
+
+        .heart__icon--solid {
+            transform: scale(1);
+        }
+
+        .heart__icon--outline {
+            background: linear-gradient(180deg, $color-heart1 0%, $color-heart2 100%);
+            background-clip: text;
+            color: transparent;
+        }
+    }
+}
