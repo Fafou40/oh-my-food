@@ -2,7 +2,7 @@
     background-color: #f7f7f7;
     padding-bottom: 40px;
 
-    @media screen and (min-width:700px) {
+    @include laptop {
         margin-left: 100px;
         margin-right: 100px;
     }
@@ -19,7 +19,7 @@
     display: flex;
     flex-wrap: nowrap;
 
-    @media screen and (min-width:500px) {
+    @include tablet {
         @include display;
     }
 }
@@ -57,7 +57,7 @@
     &__container {
         margin-bottom: 40px;
 
-        @media screen and (min-width:600px) {
+        @include laptop {
             margin-left: 100px;
             margin-right: 100px;
         }

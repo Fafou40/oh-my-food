@@ -61,14 +61,14 @@
     line-height: 41px;
 }
 
-@mixin mobile-only {
-    @media screen and (max-width: map-get($breakpoints, mobile)) {
+@mixin tablet {
+    @media screen and (min-width: map-get($breakpoints, tablet)) {
         @content;
     }
 }
 
-@mixin tablet-only {
-    @media screen and (min-width: map-get($breakpoints, tablet)) {
+@mixin laptop {
+    @media screen and (min-width: map-get($breakpoints, laptop)) {
         @content;
     }
 }

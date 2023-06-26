@@ -9,9 +9,9 @@
         @include h1_h2;
         padding-left: 20px;
         padding-top: 54px;
-
-        @media screen and (min-width:550px) {
-            margin-left: 100px;
+        @include tablet {
+            margin-left: 150px;
+            margin-right: 150px;
         }
 
     }
@@ -29,11 +29,11 @@
 }
 
 .restaurants-display {
-    @media screen and (min-width:550px) {
+        @include tablet {
         @include display;
         flex-wrap: wrap;
-        margin-left: 300px;
-        margin-right: 300px;
+        margin-left: 150px;
+        margin-right: 150px;
     }
 }
 
@@ -45,9 +45,9 @@
     &__title {
         margin-bottom: 26px;
 
-        @media screen and (min-width:550px) {
-            margin-left: 100px;
-            margin-right: 100px;
+        @include tablet {
+            margin-left: 150px;
+            margin-right: 150px;
         }
     }
 }
@@ -57,7 +57,7 @@
 }
 
 .explains__display {
-    @media screen and (min-width:550px) {
+    @include tablet {
         @include display;
         flex-wrap: wrap;
         gap: 45px;
